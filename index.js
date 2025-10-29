@@ -4,8 +4,8 @@ require('dotenv').config();
 
 const httpServer = http.createServer(app);
 
-const URL = process.env.HOST || `127.0.0.1`;
-const PORT = process.env.PORT || 443;
+const URL = process.env.HOST || `0.0.0.0`;
+const PORT = process.env.PORT || 8001;
 
 if (process.env.NODE_ENV === 'production') {
     console.log('🚀 Running in production mode');
